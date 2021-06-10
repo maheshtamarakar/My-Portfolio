@@ -7,26 +7,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/mobile.css">
+     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Portfolio</title>
 </head>
 
 <body>
-    <nav class="navbar ">
-        <div class="container row navbar-flex">
-            <div class="left">
-                <a href="#">Portfo <span>lio.</span> </a>
+    <header class="header">
+    <nav class="navbar ">       
+                <a class="nav-logo" href="#">Portfo <span>lio.</span> </a>
+                <ul class = 'nav-menu change'>
+                    <li class="nav-item"><a class='nav-link' href="#">Home</a></li>
+                    <li class="nav-item"><a class='nav-link' href="#about">About</a></li>
+                    <li class="nav-item"><a class='nav-link' href="#skills">Skills</a></li>
+                    <li class="nav-item"><a class='nav-link' href="#contact">Contact</a></li>
+                </ul>           
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
             </div>
-            <div class="right">
-                <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Skills</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-
-            </div>
-        </div>
+        
     </nav>
+</header>
     <!-- start home section -->
     <section class="home">
         <div class="home-background ">
@@ -43,25 +46,21 @@
     </section>
     <!-- end home section -->
     <!-- start about section -->
-    <section class="abt container">
+    <section class="abt container " data-aos="fade-in" id="about">
 
         <div class="head">
             <div class="title">About me</div>
 
         </div>
         <div class="abt-flex">
-            <div class="abt-left abt-item">
+            <div class="abt-left abt-item" data-aos="fade-up">
                 <img src="image/profile-1.jpeg" alt="">
             </div>
 
-            <div class="abt-right abt-item">
+            <div class="abt-right abt-item" data-aos="fade-up">
                 <div class="abt-name"> I'm Mahesh and I'm a <span> Front End Web Developer</span></div>
                 <div class="abt-detail lh-2">
-                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque
-                        autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus
-                        accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus
-                        veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis
-                        beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <p>I have made Two fully responsive websites which are 1.blogging website 2. live dinner (table booking website). and one real estate attractive website.Udemy certified. I can make fully responsive by using <strong>css flex-box and grid property</strong>  very easily. and by using <strong>rem</strong> unit </p>
                 </div>
                 <a href="#" class="btn">Download CV</a>
 
@@ -71,53 +70,75 @@
     <!-- end about section -->
     <!-- start work section -->
 
-    <section class="work b-black ">
+    <section class="work b-black " >
         <div class="head c-white">
-            <div class="title">My Work</div>
+            <div class="title" data-aos="fade-in">My Work</div>
 
         </div>
-        <div class="p-work container">
+        <div class="p-work container" data-aos="fade-up">
 
-            <div class="box"></div>
+            <div class="box">
+            <img class="zoom" src="image/blogging.jpg" alt="">
+            <div class="overlay">
+                <a href="https://maheshtamarakar.github.io/responsive_blogging_website/" target="_blank">+</a>
+
+            </div>
+            <div class="more-abt">
+                <p>Blogging Website</p>
+            </div>
+            </div>
 
 
 
-            <div class="box"></div>
+            <div class="box">
+                <img class="zoom" src="image/real-estate.jpg" alt="">
+                
+                <div class="overlay"><a href="https://maheshtamarakar.github.io/real_estate_none-responsive_website/" target="_blank">+</a></div>
+                <div class="more-abt">
+                    <p>Real Estate Website</p>
+                </div>
+
+            </div>
 
 
 
-            <div class="box"></div>
+            <div class="box">
+                <img class="zoom" src="image/live-dinner.jpg" alt="">
+                
+                <div class="overlay"><a href="https://maheshtamarakar.github.io/liverestaurant1/" target="_blank">+</a></div>
+                <div class="more-abt">
+                    <p>Live Dinner Restaurant Website</p>
+                </div>
+
+
+            </div>
 
 
         </div>
     </section>
     <!-- end work section -->
     <!-- start my skills section -->
-    <section class="abt container">
+    <section class="abt container" id="skills">
 
         <div class="head">
-            <div class="title">My skills</div>
+            <div class="title" data-aos="fade-in">My skills</div>
 
         </div>
         <div class="abt-flex">
-            <div class="abt-right abt-item">
-                <div class="abt-name"> My creative skills & experiences.</div>
+            <div class="abt-right abt-item" data-aos="fade-up">
+                <div class="abt-name" >SUMMERY</div>
                 <div class="abt-detail lh-2">
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi ut voluptatum eveniet doloremque
-                        autem excepturi eaque, sit laboriosam voluptatem nisi delectus. Facere explicabo hic minus
-                        accusamus alias fuga nihil dolorum quae. Explicabo illo unde, odio consequatur ipsam possimus
-                        veritatis, placeat, ab molestiae velit inventore exercitationem consequuntur blanditiis omnis
-                        beatae. Dolor iste excepturi ratione soluta quas culpa voluptatum repudiandae harum non.</p>
+                    <p>Resourceful Front End Web Developer bringing in-depth knowledge of latest technology trends to produce clean website design. Experience handling complex HTML and CSS coding, design and extensions to meet organization's front-facing internet needs. Detail-oriented collaboration with others to define project expectations and demand. Hands-on testing and debugging to address inconsistencies and maintain performance thresholds.</p>
                 </div>
                 <a href="#" class="btn">Read more</a>
 
             </div>
-            <div class="skills">
+            <div class="skills abt-right">
                 <div class="bars">
                     <div class="skill-flex">
                         <div class="skill">HTML
                         </div>
-                        <div class="percentage">80%</div>
+                        <div class="percentage">90%</div>
                     </div>
                     <div class="line html"></div>
                 </div>
@@ -125,7 +146,7 @@
                     <div class="skill-flex">
                         <div class="skill">CSS
                         </div>
-                        <div class="percentage">60%</div>
+                        <div class="percentage">80%</div>
                     </div>
                     <div class="line css"></div>
                 </div>
@@ -137,36 +158,92 @@
                     </div>
                     <div class="line JavaScript"></div>
                 </div>
+                <div class="bars">
+                    <div class="skill-flex">
+                        <div class="skill">python
+                        </div>
+                        <div class="percentage">70%</div>
+                    </div>
+                    <div class="line python"></div>
+                </div>
+                <div class="bars">
+                    <div class="skill-flex">
+                        <div class="skill">django
+                        </div>
+                        <div class="percentage">30%</div>
+                    </div>
+                    <div class="line django"></div>
+                </div>
             </div>
 
 
         </div>
     </section>
     <!-- end my skills section -->
-    <!-- start work section -->
+    <!-- start contact form -->
+    <section class="abt container" id="contact">
 
-    <section class="work b-black ">
-        <div class="head c-white">
-            <div class="title">My Work</div>
+        <div class="head">
+            <div class="title" data-aos="fade-in">Contact me</div>
 
         </div>
-        <div class="p-work container">
+        <div class="abt-flex">
+            <div class="abt-right abt-item" data-aos="fade-up">
+                <div class="abt-name">Get in Touch</div>
+                <div class="abt-detail lh-2">
+                    <p>So if You have any vacancy or job plz contact me by using below email_id or directly call me using below phone num.</p>
+                </div>
+                <div class="contact-flex">
+                    <div class="logo">
+                        <img src="image/human.svg" alt="">
+                    </div>
+                    <div class="detail lh-2">
+                        <h3>Name</h3>
+                        <p>Mahesh Tamarakar</p>
+                    </div>
+                </div>
+                <div class="contact-flex">
+                    <div class="logo">
+                        <img src="image/call.svg" alt="">
+                    </div>
+                    <div class="detail lh-2">
+                        <h3>phone</h3>
+                        <p>9321186495</p>
+                    </div>
+                </div>
+                <div class="contact-flex">
+                    <div class="logo">
+                        <img src="image/email.svg" alt="">
+                    </div>
+                    <div class="detail lh-2">
+                        <h3>Email</h3>
+                        <p>maheshtamrakar369@gmail.com</p>
+                    </div>
+                </div>
 
-            <div class="box"></div>
-
-
-
-            <div class="box"></div>
-
-
-
-            <div class="box"></div>
+            </div>
+            <div class="contact-right abt-right">
+                <h3>Message me</h3>
+                <input type="text" placeholder="Name">
+                <input  type="email" placeholder="Email">
+                <input class="colum" type="text" placeholder="Subject">
+                <textarea class="colum" name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+                <a class="btn1 send" href="#">Send message</a>
+            </div>
+            
 
 
         </div>
     </section>
-    <!-- end work section -->
-    <script src="js/"></script>
+    <!-- end contact form -->
+    <footer class="footer">
+        <span>Created By &nbsp;</span><a href="#"> Mahesh Tamrakar </a><span>&nbsp;  |  2020 All rights reserved.</span>
+    </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="js/app.js"></script>
 </body>
 
 </html>
