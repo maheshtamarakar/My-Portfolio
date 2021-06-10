@@ -362,3 +362,16 @@ html{
     font-size: 2rem;
 
 }
+.go-up{
+    width: 43px;
+    height: 43px;
+    border-radius: 10px;
+    background-color: var(--main-bg-color);
+    position: fixed;
+    right: 4rem;
+    bottom: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
