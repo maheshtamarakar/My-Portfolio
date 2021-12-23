@@ -5,16 +5,12 @@ window.onscroll = function () {
     // "use strict";
     if (document.body.scrollTop >= 100 || document.documentElement.scrollTop >= 100 ) {
         myNav.classList.add("nav-colored");
-        myNav.classList.remove("nav-transparent");
-        myNav.classList.remove("nav-transparent");
         nav_hover.classList.remove("change");
         logo.style.color='white';
     } 
     else {
-        myNav.classList.add("nav-transparent");
         myNav.classList.remove("nav-colored");
         nav_hover.classList.add("change");
-
         logo.style.color='crimson';
 
     }
