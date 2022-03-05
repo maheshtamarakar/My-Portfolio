@@ -237,36 +237,62 @@ html {
 .abt-item {
   margin-right: 2rem;
 }
+
+/* start work styling */
 .box {
-  width: 30rem;
+  width: 43rem;
   height: 27rem;
-  /* background-color: red; */
   position: relative;
-  margin: 2rem;
+  /* margin: 2rem; */
   transition: all 0.5s ease;
-  margin-bottom: 10rem;
+  /* margin-bottom: 10rem; */
   overflow: hidden;
   border-radius: 0.6rem;
 }
+
 .overlay {
   position: absolute;
   width: 100%;
   height: 100%;
   background-color: var(--main-bg-color);
-  opacity: 0;
+  opacity: 1;
   top: 0;
   left: 0;
-  display: flex;
+  /* display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: center; */
   transition: all 0.5s ease;
+  padding: 1.5rem;
 }
+.overlay .overlay__text h2 {
+  display: block;
+  margin-bottom: 16px;
+  font-size: 2.5rem;
+  color: white;
+}
+.overlay .overlay__text p {
+  font-size: 1.5rem;
+}
+
+.overlay__link a{
+  font-size: 1.5rem;
+  background: green;
+  padding: 1.2rem 1.8rem;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+/* .box:hover .overlay {
+  opacity: 0.8;
+} */
 .more-abt {
-  position: absolute;
-  width: 100%;
-  height: 16%;
+  background-color: red !important;
+  /* z-index: 100; */
+  position: static;
+  /* width: 100%; */
+  /* height: 16%; */
   background-color: black;
-  top: 24rem;
+  /* top: 24rem; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -280,16 +306,13 @@ html {
   color: #fff;
 }
 
-.box:hover .overlay {
-  opacity: 0.8;
-}
-
 .zoom {
   height: 100%;
   width: 100%;
-  position: absolute;
+  /* position: absolute; */
   transition: all 0.5s ease;
-  left: 0;
+  /* left: 0; */
+  object-fit: cover;
 }
 .box:hover .zoom {
   transform: scale(1.2);
@@ -306,6 +329,8 @@ html {
   flex-wrap: wrap;
   margin-bottom: 2rem;
 }
+/* end work styling  */
+
 .skill-flex {
   display: flex;
   justify-content: space-between;
