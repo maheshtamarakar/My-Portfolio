@@ -20,6 +20,13 @@
     border-radius: 33.5rem;
   }
 }
+@media only screen and (max-width: 1174px) {
+  .work__link{
+    display: flex;
+    justify-content: center;
+  }
+  
+}
 @media only screen and (max-width: 928px) {
   .hamburger {
     display: block;
